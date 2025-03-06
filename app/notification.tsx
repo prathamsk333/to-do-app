@@ -12,10 +12,10 @@ export default function Notification({ message, status }: NotificationProps) {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsVisible(false); // Hide the notification after 4 seconds
+      setIsVisible(false); 
     }, 4000);
 
-    return () => clearTimeout(timer); // Cleanup the timer on unmount
+    return () => clearTimeout(timer); 
   }, []);
 
   return (

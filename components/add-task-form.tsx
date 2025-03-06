@@ -37,7 +37,7 @@ export default function AddTaskForm({ darkMode }: AddTaskFormProps) {
 
     // If location is provided, fetch weather data
     if (location && location.trim() !== "") {
-      const taskId = Date.now() // Same ID used in addTask
+      const taskId = Date.now() 
       dispatch(fetchWeatherForTask({ id: taskId, location }))
     }
 

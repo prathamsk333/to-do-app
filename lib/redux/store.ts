@@ -1,7 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit"
 import tasksReducer, { type TasksState } from "./features/taskSlice"
 
-// Function to load state from localStorage
 const loadState = (): TasksState | undefined => {
   try {
     const serializedState = localStorage.getItem("tasksState")
@@ -11,7 +10,6 @@ const loadState = (): TasksState | undefined => {
   }
 }
 
-// Function to save state to localStorage
 const saveState = (state: TasksState) => {
   try {
     const serializedState = JSON.stringify(state)
@@ -21,7 +19,6 @@ const saveState = (state: TasksState) => {
   }
 }
 
-// Load persisted state
 const loadPersistedState = () => {
   if (typeof window === "undefined") {
     return undefined
@@ -35,17 +32,16 @@ export const store = configureStore({
   reducer: {
     tasks: tasksReducer,
   },
-  preloadedState: preloadedState ? { tasks: preloadedState } : undefined, // Initialize with localStorage state
+  preloadedState: preloadedState ? { tasks: preloadedState } : undefined,
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
-      serializableCheck: false, // Disable for development if needed
+      serializableCheck: false, 
     }),
 })
 
-// Only save state on client side
 if (typeof window !== "undefined") {
   store.subscribe(() => {
-    saveState(store.getState().tasks) // Save only the tasks slice
+    saveState(store.getState().tasks) 
   })
 }
 
