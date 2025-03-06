@@ -1,9 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+React To-Do Application
+Overview
+This is a simple yet functional To-Do Application built using ReactJS and Next.js. The application allows users to manage their tasks efficiently by adding, editing, deleting, and marking tasks as complete. It also includes JWT-based authentication for secure user access and integrates an external API to fetch and display additional data.
+
+This project is designed to evaluate the skills of a fresher candidate aspiring to join as a ReactJS Developer. It tests their understanding of foundational web technologies (HTML, CSS, JavaScript) and essential React concepts.
+
+Features
+User Authentication: Secure login and registration using JWT.
+
+Task Management:
+
+Add, edit, delete, and mark tasks as complete.
+
+Filter tasks by status (All, Completed, Incomplete).
+
+API Integration: Fetch and display external data (e.g., weather, quotes, or other APIs).
+
+Responsive Design: Works seamlessly on mobile, tablet, and desktop devices.
+
+Technologies Used
+Frontend:
+
+ReactJS
+
+Next.js
+
+HTML, CSS, JavaScript
+
+Axios (API Calls)
+
+Backend:
+
+Node.js
+
+Express.js
+
+JWT (Authentication)
+
+Other Tools:
+
+Git (Version Control)
+
+Postman (API Testing)
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
 
+1) npm i
+
+2) run the server
 ```bash
 npm run dev
 # or
@@ -16,22 +61,8 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+Open your browser and navigate to http://localhost:3000.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# to-do-app
